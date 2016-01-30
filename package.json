@@ -1,0 +1,14 @@
+{
+  "name": "caryll-editor",
+  "version": "0.0.1",
+  "main": "./main.js",
+  "dependencies": {
+    "yargs": "*"
+  },
+  "devDependencies": {
+	  "electron-prebuilt": "*"
+  },
+  "scripts": {
+	  "start": "./node_modules/.bin/electron ./main.js"
+  }
+}
