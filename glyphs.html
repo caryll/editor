@@ -1,0 +1,18 @@
+<!DOCTYPE html><meta charset="utf-8"><style>@import url(static/glyphs/main.css);</style>
+<!-- CARYLL Glyphs window -->
+<body id="appwindow-glyphs">
+<tabbar id="main">
+	<tab v-for="glyphs" active>Glyphs</tab>
+	<tab v-for="meta">Meta</tab>
+	<space style="flex:3"></space>
+	<button id="newmetric">Open Editor</button>
+</tabbar>
+<section id="glyphs" active>
+	<label>Variant <dropdown placeholder="Variants" v-bind:terms="variants"></dropdown></label>
+	<label>Order by <select><option>Smart</option></select></label>
+</section>
+<section id="meta">
+</section>
+
+<script src="static/glyphs/main.js"></script>
+</body>

@@ -4,12 +4,24 @@
   "main": "./main.js",
   "dependencies": {
     "yargs": "*",
-	"vue": "*"
+    "vue": "*"
   },
   "devDependencies": {
-	  "electron-prebuilt": "*"
+    "babel-core": "^6.4.5",
+    "babel-plugin-transform-runtime": "^6.4.3",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-runtime": "^5.8.35",
+    "electron-prebuilt": "*",
+    "gulp": "*",
+    "gulp-browserify": "*",
+    "gulp-stylus": "*",
+    "vue-hot-reload-api": "^1.3.2",
+    "vueify": "*",
+    "vueify-insert-css": "^1.0.0",
+	"gulp-rename": "*"
   },
   "scripts": {
-	  "start": "./node_modules/.bin/electron ./main.js"
+    "start": "./node_modules/.bin/electron ./main.js",
+    "prestart": "./node_modules/.bin/gulp"
   }
 }

@@ -10,9 +10,9 @@ app.on('window-all-closed', function() {
 });
 
 app.on('ready', function() {
-  mainWindow = new BrowserWindow({width: 800, height: 600});
+  mainWindow = new BrowserWindow({width: 48*16, height: 750});
 
-  mainWindow.loadURL('file://' + __dirname + '/keeper.html');
+  mainWindow.loadURL('file://' + __dirname + '/glyphs.html');
 
   mainWindow.on('closed', function() {
     mainWindow = null;

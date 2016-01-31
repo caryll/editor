@@ -1,0 +1,50 @@
+controlpad = 0.5em
+controlborder = 0.2em
+
+button, select
+	border none
+	background uiblue
+	font-size 0.8em
+	border-radius controlpad
+	padding controlpad (controlpad * 3)
+	color white
+
+select
+	background white
+	color black
+	border controlborder solid mix(black, white, 10%)
+	padding (controlpad - controlborder)
+	option
+		padding controlpad
+		background white
+
+tabbar
+	z-depth(0)
+	line-height 1.5em
+	display flex
+	height 3em
+	tab
+		font-size 1em
+		font-weight 400
+		margin 0
+		padding 0.75em 2em
+		text-align center
+		flex 1
+		position relative
+		background white
+		cursor pointer
+		
+		&[active]:before, &:hover:before
+			display block
+			content ' '
+			position absolute
+			left 0
+			right 0
+			top 0
+			height 0.25em
+			background scarlet
+		&:hover:before
+			background alpha(scarlet, 0.25)
+	
+	button
+		margin 0.5em
