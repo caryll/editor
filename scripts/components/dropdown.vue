@@ -5,11 +5,11 @@
 </select>
 </template>
 
-<script lang="babel">
-module.exports = {
-	props : ['placeholder', 'terms'],
-	data : function(){
-		placeholder: '<dropdown>'
+<script>
+	module.exports = {
+		props : ['placeholder', 'terms'],
+		data : function(){
+			placeholder: '<dropdown>'
+		}
 	}
-}
 </script>
