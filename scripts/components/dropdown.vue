@@ -5,8 +5,11 @@
 </select>
 </template>
 
-<script lang="ptl">
-	export : define props {'placeholder', 'terms'}
-	export : define [data] : begin
-		return {.placeholder '{dropdown}'}
+<script>
+	module.exports = {
+		props : ['placeholder', 'terms'],
+		data : function(){
+			return {placeholder: '<dropdown>'}
+		}
+	}
 </script>
